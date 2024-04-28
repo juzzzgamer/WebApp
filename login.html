@@ -2,18 +2,34 @@
 <html>
     <title>Login</title>
     <head>
-
+        <style>
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+        </style>
     </head>
-    <body>
-        <h1>Welcome to XXX</h1>
-        <p>Username: <input type="text" id="uname" name="uname"></p>
-        <p>Password: <input type="password" id="password" name="password"></p>
-        <button type="button" id="login-button">Login</button>
-        <p id="login-message"></p>
-        <script>
-            document.getElementById("login-button").addEventListener("click", function() {
-                document.getElementById("login-message").textContent = "Login successful";
-            });
-        </script>
+    <body style="overflow:hidden;">
+        <div class="container">
+            <form action="">
+                <h1>Welcome to GachaFam!</h1>
+                <div class="iusername">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="ipassword">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <label><input type="checkbox">Remember me</label>
+                <div class="forgotpw">
+                    <a href="#">Forgot password?</a>
+                </div>
+                <input type="submit" value="Login">
+                <div class="register">
+                    <p>Dont have an account? <a href="#">Register</a></p>
+                </div>
+
+            </form>
     </body>
 </html> 
