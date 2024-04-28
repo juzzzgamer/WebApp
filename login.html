@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <title>Login</title>
+    <head>
+
+    </head>
+    <body>
+        <h1>Welcome to XXX</h1>
+        <p>Username: <input type="text" id="uname" name="uname"></p>
+        <p>Password: <input type="password" id="password" name="password"></p>
+        <button type="button" id="login-button">Login</button>
+        <p id="login-message"></p>
+        <script>
+            document.getElementById("login-button").addEventListener("click", function() {
+                document.getElementById("login-message").textContent = "Login successful";
+            });
+        </script>
+    </body>
+</html> 
